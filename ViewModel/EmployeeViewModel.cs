@@ -15,7 +15,7 @@ namespace Module05Exercise01.ViewModel
     public class EmployeeViewModel:INotifyPropertyChanged
     {
         private readonly EmployeeService _employeeService;
-        public ObservableCollection<Employee> EmployeelList { get; set; }
+        public ObservableCollection<Employee> EmployeeList { get; set; }
 
         private bool _isBusy;
         public bool IsBusy

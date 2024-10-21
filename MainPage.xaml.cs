@@ -17,19 +17,7 @@ namespace Module05Exercise01
             _dbConnectionService = new DatabaseConnectionServices();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
-        {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
-        }
-
-        private async void OnTestConnecitonClicked(object sender, EventArgs args)
+        private async void OnTestConnectionClicked(object sender, EventArgs args)
         {
             var connectionString = _dbConnectionService.GetConnectionString();
             try
@@ -48,7 +36,7 @@ namespace Module05Exercise01
             }
         }
 
-        private async void OpenViewPersonal(object sender, EventArgs args)
+        private async void OpenViewEmployee(object sender, EventArgs args)
         {
             await Shell.Current.GoToAsync("//ViewEmployee");
         }

@@ -3,9 +3,9 @@ using Module05Exercise01.ViewModel;
 
 namespace Module05Exercise01.View;
 
-public partial class ViewEmployeee : ContentPage
+public partial class ViewEmployee : ContentPage
 {
-	public ViewEmployeee()
+	public ViewEmployee()
 	{
 		InitializeComponent();
 

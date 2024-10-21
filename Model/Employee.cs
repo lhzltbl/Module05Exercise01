@@ -13,5 +13,15 @@ namespace Module05Exercise01.Model
         public string Address { get; set; }
         public string email { get; set; }
         public string ContactNo { get; set; }
+
+        public string employeeInfo
+        {
+            get
+            {
+                return $"Address: {Address}\n" +
+                    $"Email: {email}\n" +
+                    $"Contact No.: {ContactNo}";
+            }
+        }
     }
 }

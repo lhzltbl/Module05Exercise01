@@ -64,9 +64,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="View\ViewEmployeee.xaml">
+	  <Compile Update="View\ViewEmployee.xaml.cs">
+	    <DependentUpon>ViewEmployee.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\ViewEmployee.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Screenshots\" />
 	</ItemGroup>
 
 </Project>
